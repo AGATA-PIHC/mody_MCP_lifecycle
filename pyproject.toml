@@ -1,0 +1,13 @@
+[project]
+name = "mody-mcp"
+version = "0.1.0"
+description = "MCP server agent Mody: Databricks read-only dan GitHub terbatas"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.28,<2",
+    "databricks-sdk>=0.30",
+    "httpx>=0.27",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
